@@ -1,0 +1,107 @@
+/*configuracion general*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    color: rgb(25, 41, 255);
+}
+
+header{
+    background: rgb(23, 27, 255);
+    color: rgb(241, 241, 241);
+    text-align: center;
+    padding: 25px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+/*secion presentacion*/
+.presentacion{
+    padding: 20px;
+    text-align: center;
+}
+.presentacion img{
+    width: 100px;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.presentacion h2{
+    color: rgb(0, 0, 0);
+}
+.btn-accion{
+    padding: 15 px 30px;
+    background: linear-gradient(45deg, rgb(29, 160, 236),rgb(93, 5, 255));
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgb(3, 3, 3);
+    transition: backgroud 0.3s,transform ;
+}
+.btn-accion:hover{
+    background: liner-gradient(rgb(0, 255, 13),rgb(255, 0, 230),rgb(225, 255, 0));
+    transform: scale(1.1);
+}
+/*galeria*/
+.galeria{
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria h2{
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.imagenes img{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    transition: transform 0.3s,box-swhadow 0.3s;
+}
+.imagenes img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(4, 255, 46);
+}
+/*footer con redes sociales*/
+footer{
+    background: rgb(9, 13, 255);
+    color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.redes{
+    margin: 10px 0;
+}
+.redes a{
+    font-size: 28px;
+    margin: 0 12px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    transition: transform 0.3s,color 0.3s;
+}
+.redes a:hover{
+    transform: scale(1.2);
+    color: rgb(255, 12, 32);
+}
+/*responsivo desde 768px*/
+@media (min-width: 768px){
+    .presentacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+        text-align: left;
+    }
+    .prsentacion img{
+        margin-bottom: 0;
+    }
+}
